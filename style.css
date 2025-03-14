@@ -1,0 +1,581 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    width: 100%;
+    height: 19vh;
+}
+
+.header-container-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+    height: 100%;
+    background-color: #F6F6F6;
+}
+
+.header-container-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 56%;
+    height: 100%;
+    background-color: white;
+}
+
+.header-container-right a{
+    font-size: 1.43vw;
+    color: black;
+    text-decoration-line: none;
+}
+
+.header-container-right i{
+    margin-right: 8px;
+    font-weight: 660;
+    transition: .5s all ease;
+}
+
+.header-container-right a:hover i{
+    margin-right: 20px;
+}
+
+.form-container-right a{
+    color: black;
+    font-size: 1.35vw;
+    transition: .1s all ease;
+    text-decoration-line: none;
+}
+
+a:hover{
+    color: red;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 100%;
+    height: auto;
+    background-color: #F6F6F6;
+}
+
+.form-container-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 180vh;
+    background-color: #F6F6F6;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0px;
+    width: 100%;
+    height: auto;
+}
+
+form h1{
+    padding: 20px 200px 15px 0px;
+    color: rgb(46, 46, 46);
+    font-size: 4vw;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form h2{
+    padding: 40px 0px;
+    font-size: 21px;
+    font-weight: 550;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+form span{
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form input{
+    padding: 2.5vh;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 0.8px solid rgb(173, 173, 173);
+
+}
+
+form div textarea{
+    padding: 14px 10px;
+    width: 100%;
+    height: 25vh;
+    font-size: 17px;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 25vh;
+}
+
+form div button{
+    cursor: pointer;
+    padding: 13px 0px;
+    width: 35%;
+    font-size: 1.37vw;
+    font-weight: 550;
+    margin-left: 2px;
+    margin-top: 20px;
+    border-radius: 1.2px;
+    border: 1px solid gray;
+    color: white;
+    background-color: black;
+    transition: 0.3s all ease;
+}
+
+form div button i{
+    margin-left: 5px;
+    transition: 0.5s all ease;
+}
+
+form div button:hover{
+    background-color: rgb(248, 110, 4);
+}
+
+form div button:hover i{
+    margin-left: 12px;
+}
+
+.form-container-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 56%;
+    height: 180vh;
+    background-color: white;
+}
+
+.info-container{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    padding-right: 140px;
+    width: 100%;
+    height: 45vh;
+    padding-bottom: 60px;
+}
+
+.info h2{
+    margin-bottom: 12px;
+}
+
+.Melbourne-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+}
+
+.Melbourne{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 80%;
+    height: 30vh;
+    border-bottom: 1px solid black;
+}
+
+.Melbourne-content{
+    width: auto;
+    height: 100%;
+}
+
+.Melbourne-content p{
+    padding: 13px 0px 20px 0px;
+    font-weight: 540;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.Melbourne-img{
+    display: flex;
+    align-items: end;
+    width: 62%;
+    height: 100%;
+
+}
+
+.Melbourne-img img{
+    width: 110%;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 5vh 0vw;
+    color: white;
+    background-color: black;
+}
+
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 30vh;
+    border-bottom: 0.2vw solid rgb(183, 183, 183);
+    font-size: 1.1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 10vh 0vw;
+}
+
+.footer-center-parts{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 45vh;
+    margin: 0vh 1vw;
+}
+
+.footer-center-parts img{
+    width: 95%;
+    margin-bottom: 2vh;
+}
+
+.footer-center-parts h3{
+    margin-bottom: 3.7vh;
+}
+
+.footer-center-parts a{
+    color: white;
+    margin-bottom: 2.8vh;
+    text-decoration-line: none;
+    transition: 0.2s all ease;
+}
+
+.footer-center-parts a:hover{
+    color: #F47521;
+}
+
+.footer-center-parts span{
+    line-height: 4vh;
+    margin-bottom: 3vh;
+}
+
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 25vh;
+}
+
+.footer-end span{
+    padding: 0vh 3vw;
+    width: auto;
+    height: auto;
+}
+
+.footer-end span a{
+    color: white;
+    margin: 0vh 0.9vw;
+    text-decoration-line: none;
+    transition: 0.2s all ease;
+}
+
+.footer-end span a:hover{
+    color: #F47521;
+}
+
+.footer-end span i{
+    cursor: pointer;
+    font-size: 2.8vw;
+    margin: 0vh 0.9vw;
+    transition: 0.2s all ease;
+}
+
+.footer-end span i:hover{
+    color: #a6a5a56c;
+}
+
+
+    /*--------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------*/
+    /*--------------------------------------------------------------------------*/
+
+@media only screen and (max-width:360px){
+
+    header{
+        flex-direction: column;
+        padding: 30px 0px;
+        width: 100%;
+        height: 22vh;
+        background-color: #F6F6F6;
+    }
+    
+    .header-container-left{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    .header-container-right{
+        justify-content: center;
+        padding: 20px 0px;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    .header-container-right a{
+        font-size: 5.55vw;
+        font-weight: 500;
+    }
+
+    .form-container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .form-container-left{
+        padding: 30px 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .form-container-header{
+        justify-content: center;
+    }
+    
+    form{
+        padding: 15px 10px;
+        width: 100%;
+    }
+    
+    form h1{
+        padding: 5px 0px 15px 0px;
+        font-size: 10vw;
+    }
+    
+    form h2{
+        padding: 40px 0px;
+        font-size: 18.5px;
+        text-align: center;
+    }
+    
+    form div{
+        width: 95%;
+    }
+    
+    form span{
+        font-size: 4.9vw;
+    }
+    
+    form div button{
+        padding: 13px 0px;
+        width: 100%;
+        font-size: 5.6vw;
+        font-weight: 500;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    form div button i{
+        margin-left: 10px;
+    }
+    
+    form div button:hover i{
+        margin-left: 20px;
+    }
+    
+    .form-container-right{
+        padding: 10px 15px;
+        width: 100%;
+        height: 165vh;
+    }
+
+    .form-container-right a{
+        color: black;
+        font-size: 5vw;
+        transition: .1s all ease;
+        text-decoration-line: none;
+    }
+    
+    .form-container-right-header{
+        padding: 8vh 1vw;
+        text-align: end;
+        width: 100%;
+    }
+    
+    .form-container-right-header i{
+        margin-right: 8px;
+        font-weight: 660;
+        transition: .5s all ease;
+    }
+    
+    .info-container{
+        display: flex;
+        align-items: center;
+        padding-right: 0px;
+        height: 45vh;
+        padding-bottom: 40px;
+    }
+    
+    .Melbourne-container{
+        width: 100%;
+        height: auto;
+        margin: 30px 0px;
+    }
+    
+    .Melbourne{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .Melbourne-content{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .Melbourne-content p{
+        padding: 13px 0px 25px 0px;
+        font-size: 16px;
+    }
+    
+    .Melbourne-img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .Melbourne-img img{
+        width: 100%;
+    }
+    
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 5vh 0vw 10vh 0vw;
+    color: white;
+    background-color: black;
+}
+
+footer a{
+    color: white;
+    text-decoration-line: none;
+}
+
+.footer-header{
+    width: 95%;
+    height: 15vh;
+    text-align: center;
+    font-size: 3.2vw;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3vh 0vw 0vh 0vw;
+    width: 100%;
+    height: auto;
+}
+
+.footer-center-parts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    width: auto;
+    height: auto;
+    margin: 4vh 0vw;
+}
+
+.footer-center-parts img{
+    width: 75%;
+    height: auto;
+    margin-bottom: 1.7vh;
+}
+
+.footer-center-parts h3{
+    font-size: 6vw;
+    margin-bottom: 3.5vh;
+}
+
+.footer-center-parts a{
+    margin-bottom: 2.2vh;
+}
+
+.footer-center-parts span{
+    line-height: 4vh;
+    margin-bottom: 3vh;
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.footer-end span{
+    padding: 3vh 5vw;
+    width: auto;
+    height: auto;
+}
+
+.footer-end span a{
+    line-height: 5vh;
+}
+
+.footer-end span i{
+    cursor: pointer;
+    font-size: 9vw;
+    margin: 0vh 1.5vw;
+}
+
+}
